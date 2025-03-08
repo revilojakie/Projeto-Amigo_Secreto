@@ -60,7 +60,7 @@ function sortearAmigo() {
         const indiceSorteado = Math.floor(Math.random() * listaAmigos.length);
         const resultadoItem = document.createElement("li");
         resultadoItem.textContent = `Esse é o seu amigo secreto: ${listaAmigos[indiceSorteado]}`;
-        resultadoItem.style.color = "green";
+        resultadoItem.style.color = "red";
         resultadoItem.style.fontSize = "24px";
         resultadoItem.style.fontWeight = "bold";
         resultadoItem.style.animation = "flash 1s infinite alternate";
