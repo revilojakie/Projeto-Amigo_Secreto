@@ -58,7 +58,24 @@ function sortearAmigo() {
 
     setTimeout(() => {
         const indiceSorteado = Math.floor(Math.random() * listaAmigos.length);
-        const amigoSorteado = listaAmigos[indiceSorteado];
-        resultado.innerHTML = `<li style="color: green; font-size: 24px; font-weight: bold;">Esse é o seu amigo secreto: <strong>${amigoSorteado}</strong></li>`;
+        const resultadoItem = document.createElement("li");
+        resultadoItem.textContent = `Esse é o seu amigo secreto: ${listaAmigos[indiceSorteado]}`;
+        resultadoItem.style.color = "green";
+        resultadoItem.style.fontSize = "24px";
+        resultadoItem.style.fontWeight = "bold";
+        resultadoItem.style.animation = "flash 1s infinite alternate";
+        
+        resultado.innerHTML = "";
+        resultado.appendChild(resultadoItem);
     }, 1500); // Pequeno atraso para criar suspense
 }
+
+// Adicionando animação CSS dinamicamente
+document.head.insertAdjacentHTML("beforeend", `
+<style>
+@keyframes flash {
+    from { opacity: 1; }
+    to { opacity: 0.3; }
+}
+</style>
+`);
