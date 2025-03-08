@@ -1,11 +1,10 @@
 # Amigo Secreto
 
-O projeto **Amigo Secreto** é uma aplicação que facilita a organização e o sorteio de amigos secretos de maneira simples e automatizada. Com ele, é possível criar grupos, sortear os amigos secretos e enviar notificações para que todos saibam quem têm que presentear.
+O projeto **Amigo Secreto** é uma aplicação que facilita a organização e o sorteio de amigos secretos de maneira simples e automatizada. Com ele, é possível criar grupos, sortear os amigos secretos.
 
 ## Funcionalidades
 
 - **Criação de grupos:** Crie grupos com os participantes do amigo secreto.
-- **Sorteio automatizado:** O sistema realiza o sorteio automaticamente para garantir que todos os participantes recebam e presenteiem uma pessoa diferente.
 - **Envio de notificações:** Após o sorteio, cada participante recebe uma mensagem informando quem será o seu amigo secreto.
 - **Exclusão de participantes:** Caso alguém desista ou precise sair, o administrador pode remover o participante facilmente.
 
@@ -13,10 +12,8 @@ O projeto **Amigo Secreto** é uma aplicação que facilita a organização e o 
 
 Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 - **JavaScript**
-- **Node.js**
-- **Express** (se for uma aplicação web)
-- **JSON** (para armazenar dados)
-- **(Outras tecnologias utilizadas, se houver)**
+- **HTML**
+- **CSS**
 
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES6-brightgreen)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![CSS](https://img.shields.io/badge/CSS-3-blue)](https://developer.mozilla.org/en-US/docs/Web/CSS)
