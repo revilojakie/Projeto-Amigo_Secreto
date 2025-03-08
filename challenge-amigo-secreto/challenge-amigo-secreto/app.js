@@ -4,12 +4,12 @@ function adicionarAmigo() {
     const input = document.getElementById("amigo");
     const nome = input.value.trim();
     
-    if (nome === "") {
-        alert("Por favor, insira um nome válido.");
+    if (nome === "" || listaAmigos.includes(nome.toUpperCase())) {
+        alert("Nome inválido ou já adicionado! Por favor, insira um nome único.");
         return;
     }
     
-    listaAmigos.push(nome.upperCase());
+    listaAmigos.push(nome.toUpperCase());
     input.value = "";
     atualizarLista();
 }
