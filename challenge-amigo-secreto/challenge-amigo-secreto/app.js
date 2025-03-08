@@ -9,7 +9,7 @@ function adicionarAmigo() {
         return;
     }
     
-    listaAmigos.push(nome);
+    listaAmigos.push(nome.upperCase());
     input.value = "";
     atualizarLista();
 }
