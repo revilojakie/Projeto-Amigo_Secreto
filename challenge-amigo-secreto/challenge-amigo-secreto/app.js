@@ -70,12 +70,4 @@ function sortearAmigo() {
     }, 1500); // Pequeno atraso para criar suspense
 }
 
-// Adicionando animação CSS dinamicamente
-document.head.insertAdjacentHTML("beforeend", `
-<style>
-@keyframes flash {
-    from { opacity: 1; }
-    to { opacity: 0.3; }
-}
-</style>
-`);
+
